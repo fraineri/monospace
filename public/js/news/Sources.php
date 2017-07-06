@@ -1,0 +1,206 @@
+Sources
+/*		var sourcesGeneral = [
+		'abc-news-au', 
+		'al-jazeera-english',
+		'associated-press', 
+		'bbc-news', 
+		'cnn',
+		'google-news', 
+		'independent', 
+		'metro', 
+		'mirror', 
+		'newsweek', 
+		'new-york-magazine', 
+		'reddit-r-all', 
+		'reuters', 
+		'the-guardian-au', 
+		'the-guardian-uk', 
+		'the-hindu', 
+		'the-huffington-post', 
+		'the-new-york-times', 
+		'the-telegraph', 
+		'the-times-of-india', 
+		'the-washington-post', 
+		'time', 
+		'usa-today'
+		];
+		var sourcesTech = [
+		'ars-technica',
+		'engadget', 
+		'hacker-news', 
+		'recode', 
+		'techcrunch', 
+		'techradar', 
+		'the-next-web', 
+		'the-verge'
+		];
+		var sourcesSport = [
+		'bbc-sport', 
+		'espn', 
+		'espn-cric-info', 
+		'football-italia', 
+		'four-four-two', 
+		'fox-sports',
+		'nfl-news', 
+		'talksport', 
+		'the-sport-bible'
+		];
+		var sourcesBusiness = [
+		'bloomberg', 
+		'business-insider', 
+		'business-insider-uk', 
+		'cnbc',
+		'financial-times', 
+		'fortune', 
+		'the-economist', 
+		'the-wall-street-journal'
+		];
+		var sourcesEntertainment = [
+		'buzzfeed',
+		'daily-mail', 
+		'entertainment-weekly',
+		'ign',  
+		'mashable',
+		'polygon', 
+		'the-lad-bible' 
+		];
+*/
+
+
+
+var sources = [
+		'abc-news-au', 
+		'al-jazeera-english',
+		'ars-technica',
+		'associated-press', 
+		'bbc-news', 
+		'bbc-sport', 
+		'bloomberg', 
+		'breitbart-news', 
+		'business-insider', 
+		'business-insider-uk', 
+		'buzzfeed',
+		'cnbc',
+		'cnn',
+		'daily-mail', 
+		'engadget', 
+		'entertainment-weekly', 
+		'espn', 
+		'espn-cric-info', 
+		'financial-times', 
+		'football-italia', 
+		'fortune', 
+		'four-four-two', 
+		'fox-sports', 
+		'google-news', 
+		'gruenderszene', 
+		'hacker-news', 
+		'handelsblatt', 
+		'ign', 
+		'independent', 
+		'mashable', 
+		'metro', 
+		'mirror', 
+		'mtv-news', 
+		'mtv-news-uk', 
+		'national-geographic', 
+		'new-scientist', 
+		'newsweek', 
+		'new-york-magazine', 
+		'nfl-news', 
+		'polygon', 
+		'recode', 
+		'reddit-r-all', 
+		'reuters', 
+		'talksport', 
+		'techcrunch', 
+		'techradar', 
+		'the-economist', 
+		'the-guardian-au', 
+		'the-guardian-uk', 
+		'the-hindu', 
+		'the-huffington-post', 
+		'the-lad-bible', 
+		'the-new-york-times', 
+		'the-next-web', 
+		'the-sport-bible', 
+		'the-telegraph', 
+		'the-times-of-india', 
+		'the-verge', 
+		'the-wall-street-journal', 
+		'the-washington-post', 
+		'time', 
+		'usa-today'];
+
+/*
+abc-news-au 
+al-jazeera-english 
+ars-technica 
+associated-press 
+bbc-news 
+bbc-sport 
+bild 
+bloomberg 
+breitbart-news 
+business-insider 
+business-insider-uk 
+buzzfeed 
+cnbc 
+cnn 
+daily-mail 
+der-tagesspiegel 
+die-zeit 
+engadget 
+entertainment-weekly 
+espn 
+espn-cric-info 
+financial-times 
+focus 
+football-italia 
+fortune 
+four-four-two 
+fox-sports 
+google-news 
+gruenderszene 
+hacker-news 
+handelsblatt 
+ign 
+independent 
+mashable 
+metro 
+mirror 
+mtv-news 
+mtv-news-uk 
+national-geographic 
+new-scientist 
+newsweek 
+new-york-magazine 
+nfl-news 
+polygon 
+recode 
+reddit-r-all 
+reuters 
+spiegel-online 
+t3n 
+talksport 
+techcrunch 
+techradar 
+the-economist 
+the-guardian-au 
+the-guardian-uk 
+the-hindu 
+the-huffington-post 
+the-lad-bible 
+the-new-york-times 
+the-next-web 
+the-sport-bible 
+the-telegraph 
+the-times-of-india 
+the-verge 
+the-wall-street-journal 
+the-washington-post 
+time 
+usa-today 
+wired-de 
+wirtschafts-woche
+*/
