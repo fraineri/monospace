@@ -23,6 +23,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return redirect('news/general');
+        if(\Auth::check()){
+            return redirect('/news');
+        }
+        else{
+            return view('index');
+        }
     }
 }

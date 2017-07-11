@@ -10,9 +10,22 @@
 	
 	<nav class="sideBar-nav">
 		<ul class="sideBar-navList">
-			<li class="sideBar-navList-item">News</li>
+			<li><a class="sideBar-navList-item" href="/news">News</a></li>
 			<li class="sideBar-navList-item">Favorites</li>
-			<li class="sideBar-navList-item">Account</li>
+			@if(Auth::check())
+				<li><a class="sideBar-navList-item" href="/user/edit">Account</a></li>
+				<li class="sideBar-navList-item"
+					href="{{ route('logout') }}"
+					onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+						Logout
+				</li>
+				<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+	            	{{ csrf_field() }}
+	            </form>
+            @else
+	            <li><a class="sideBar-navList-item" href="/login">Login</a></li>
+	            <li><a class="sideBar-navList-item" href="/register">Register</a></li>
+            @endif
 		</ul>
 	</nav>
 </div>

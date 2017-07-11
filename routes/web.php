@@ -11,18 +11,17 @@
 |
 */
 
-Route::get('/','HomeController@index');
+Route::get('/aa'			,'StaticController@index');
 
-Route::get('/news/{section}','NewController@show');
+Route::get('/'				,'HomeController@index');
+Route::get('/home'			,'HomeController@index')->name('home');
 
 Auth::routes();
+Route::get('/user/edit'		,'UserController@edit');
+Route::post('/user/update'	,'UserController@update');
 
-Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/register2', function(){
-	return view('auth.register');
-});
+Route::get('/news'			,'NewController@index');
+Route::get('/news/{section}','NewController@show');
 
-Route::get('/login2', function(){
-	return view('auth.login');
-});
+
