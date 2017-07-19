@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 class StaticController extends Controller
 {
     public function index(){
-    	return view('index');
+    	if(\Auth::check()){
+            return redirect('/news');
+        }
+        else{
+            return view('index');
+        }
     }
 }

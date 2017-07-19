@@ -46,7 +46,7 @@
             </span>
             @endif
 
-            <input class="register-form-input {{$errors->has('password') ? ' has-error ' : ''}}" type="password" name="password_confirmation" placeholder=" Conmfirm Password">
+            <input class="register-form-input {{$errors->has('password_confirmation') ? ' has-error ' : ''}}" type="password" name="password_confirmation" placeholder=" Conmfirm Password">
 
             <button class="register-form-btn register-form-submit" type="submit" class="btn btn-primary">
                 Register

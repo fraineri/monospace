@@ -13,11 +13,17 @@ use GuzzleHttp\Client;
 class NewController extends Controller
 {
     public function index(){
+        if(!\Auth::check())
+            return redirect('/');
+
         $sections = \DB::table('sources')->select('section')->groupBy('section')->get();
         return view('news/index',compact("sections"));
     }
 
     public function show($section){//calcular tiempo de ejecucion (DEBUG)
+        if(!\Auth::check())
+            return redirect('/');
+        
         $start = microtime(true);
         
         $sections = \DB::table('sources')->select('section')->groupBy('section')->get();
@@ -30,7 +36,7 @@ class NewController extends Controller
         $n = 1;
         foreach ($sources as $source){
             //Verifico cuando fue la ultima actualizacion de la fuente
-            if($source->updated_at->diffInMinutes() > 50){
+            if($source->updated_at->diffInMinutes() > 1){
                 //La fuente debe ser actualizada
                 //Creo que link a la API
                 $client = new Client([
@@ -47,17 +53,17 @@ class NewController extends Controller
                 $time_elapsed_secs = microtime(true) - $start;
                 //echo "Request ".$n.": ".$time_elapsed_secs."<br>";
                 $n++;
-                
                 //Recorro todos los articulos y verifico si existen en la DB
                 foreach ($articles as $article) {
                     if($article->publishedAt == null){
                         $date = new \DateTime();
                         $date = $date->format('Y-m-d');
-                        $article->publishedAt = $date;
+                        //$article->publishedAt = $date;
                     }else{
-                        $article->publishedAt = substr($article->publishedAt, 0, 10);
+                        $strDate = substr($article->publishedAt, 0, 10);
+                        $date = strtotime($strDate);
+                        $article->publishedAt = date('Y/m/d',$date);
                     }
-
 
 //   				if(\DB::table('news')->where('title',$article->title)->count() > 0)
 /*
@@ -118,6 +124,10 @@ AND sources.section = 'sport';
             $newsSource[$source->id] = $source;
         }
 
+        foreach ($news as $new) {
+           echo $newsSource[$new->source_id]->source."->".$new->created_at."<br>";
+        }
+        exit();
     	return view('news/show',compact('newsSource','sections','section','news'));
     }
 

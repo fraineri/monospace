@@ -21,21 +21,23 @@
 				@endforeach
 			</div>
 		</div>
-<!--		
+	
+<!--
 		<div class="newsShow-main-new">
 			<div class="newsShow-main-newCont">
-				<div class="newsShow-main-newImg"></div>
-				<h3 class="newsShow-main-newTitle">Plans for U.S. Wind Farms Run Into Headwinds lorem</h3>
+				<div class="newsShow-main-newImg"
+				style="background-image: url('https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/06/09/10/brexit-guy-eu-negotiations.jpg');"></div>
+				<h3 class="newsShow-main-newTitle">Theresa May's plans for EU citizens branded a 'damp squib' by the European Parliament</h3>
 			</div>
 			<div class="newsShow-main-newFooter">
-				<span class="newsShow-main-newFooter-source">Hacker News lorem</span>
+				<span class="newsShow-main-newFooter-source">BBC</span>
 				<div class="newsShow-main-newFooter-icons">
 					<i class="newsShow-main-newFooter-favorite fa fa-heart-o"></i>
 					<i class="newsShow-main-newFooter-comment fa fa-comment-o"></i>
 				</div>
 			</div>
-		</div>		
--->		
+		</div>	
+-->	
 	</div>
 @endsection
 @section('footer-scripts')

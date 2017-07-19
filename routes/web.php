@@ -11,10 +11,13 @@
 |
 */
 
-Route::get('/aa'			,'StaticController@index');
 
+/*
 Route::get('/'				,'HomeController@index');
 Route::get('/home'			,'HomeController@index')->name('home');
+*/
+
+Route::get('/'			,'StaticController@index');
 
 Auth::routes();
 Route::get('/user/edit'		,'UserController@edit');
